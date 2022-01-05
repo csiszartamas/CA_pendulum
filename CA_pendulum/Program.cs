@@ -30,11 +30,11 @@ namespace CA_pendulum
             using (var c = new SqlConnection(ConnectionString))
             {
                 c.Open();
-                /*foreach (var d in Albums)
+                foreach (var d in Albums)
                 {
                     var r = new SqlCommand(
                         $"INSERT INTO Albums VALUES ('{d.id}', '{d.artist}', '{d.title}', '{d.release}');", c).ExecuteNonQuery();
-                }*/
+                }
                 foreach (var d in Tracks)
                 {
                     var r = new SqlCommand(
